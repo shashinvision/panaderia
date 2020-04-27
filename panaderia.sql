@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 25-04-2020 a las 06:08:57
+-- Tiempo de generación: 27-04-2020 a las 20:49:29
 -- Versión del servidor: 10.4.10-MariaDB
 -- Versión de PHP: 7.3.12
 
@@ -113,14 +113,6 @@ CREATE TABLE `productos` (
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Volcado de datos para la tabla `productos`
---
-
-INSERT INTO `productos` (`id`, `categoria_id`, `nombre`, `precioUnitario`, `precioPorMayor`, `img`, `updated_at`, `created_at`) VALUES
-(29, 5, 'queso', 1200, '700', 'queso.jpg', '2020-04-25 05:54:25', '2020-04-25 05:54:20'),
-(30, 5, 'Empanada pollo', 1250, '800', 'pollo.jpeg', '2020-04-25 06:00:17', '2020-04-25 05:59:24');
-
 -- --------------------------------------------------------
 
 --
@@ -143,7 +135,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Felipe Ignacio Mancilla Reyes', 'felipei.mancilla@gmail.com', NULL, '$2y$10$WnV8n456damLMYSNG9wMxOfO4naEVrTaDX6/qk8wNXWTMoi..jbPi', 'lgjhNZuYwTPPOif7MB70QL1g9KUlW9LjIA5uekHVt3hXj85oEgDy4HvNrHiR', '2020-04-25 05:17:38', '2020-04-25 05:17:38'),
+(1, 'Felipe Ignacio Mancilla Reyes', 'felipei.mancilla@gmail.com', NULL, '$2y$10$WnV8n456damLMYSNG9wMxOfO4naEVrTaDX6/qk8wNXWTMoi..jbPi', 'YyQtxLvgXDJH0opgITuYuSQzvjxsQyBfMKGo2UogLi5IS4dh0UncD0Lre5Ih', '2020-04-25 05:17:38', '2020-04-25 05:17:38'),
 (2, 'catalina', 'cata@cata.cl', NULL, '$2y$10$ksWhdHr6VzAmCbNvatLXzuutpH4z0RpGn3KwcHpOEQXtE58x0Lppy', NULL, '2020-04-25 05:56:13', '2020-04-25 05:56:13');
 
 --
@@ -214,7 +206,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
