@@ -1,0 +1,32 @@
+*{
+  color: white;
+}
+
+body{
+  background-image: url("../../images/madera.jpg");
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+.negro{
+    color: black;
+  }
+
+.bg-grey{
+  background-color: rgba(66, 64, 65, 0.2);
+}
+
+  
