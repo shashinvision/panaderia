@@ -26,10 +26,13 @@ class ProductoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Producto $valor)
     {
+        $tipo = [
+            'tipo' => 'subir'
+        ];
         $categorias = Categoria::all();
-        return view('subir', compact('categorias'));
+        return view('subir', compact('categorias','valor', 'tipo'));
     }
 
     /**
@@ -87,10 +90,13 @@ class ProductoController extends Controller
      */
     public function edit($id)
     {
-        //
+        
+        $tipo = [
+            'tipo' => 'editar'
+        ];
         $categorias = Categoria::all();
         $valor = Producto::find($id);
-        return view('editar', compact('valor', 'categorias'));
+        return view('editar', compact('valor', 'categorias', 'tipo'));
     }
 
     /**
